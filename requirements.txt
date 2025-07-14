@@ -4,3 +4,4 @@ pandas
 textblob
 matplotlib
 wordcloud
+seaborn
