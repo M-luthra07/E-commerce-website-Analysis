@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #004a99;
+}
+
+.result-section p {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.sentiment {
+    font-weight: bold;
+    color: #007b00;
+}
+
+.graph-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.graph-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #004a99;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #003366;
+}

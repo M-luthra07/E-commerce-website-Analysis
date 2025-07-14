@@ -1,0 +1,6 @@
+Flask
+numpy
+pandas
+textblob
+matplotlib
+
