@@ -10,7 +10,7 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc
 import io
 import base64
 import numpy as np
-app = Flask(__name__, template_folder="../templates", static_folder="../static")
+app = Flask(__name__, template_folder="../template", static_folder="../static")
 DATA_PATH = r"online_review.csv"
 df = pd.read_csv(DATA_PATH)
 df = df[['Review', 'Rating']].dropna().head(200)
