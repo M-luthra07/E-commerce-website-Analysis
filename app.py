@@ -10,8 +10,8 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc
 import io
 import base64
 import numpy as np
-app = Flask(__name__)
-DATA_PATH = r"C:\Users\luthr\Downloads\amazon product review\online_review.csv"
+app = Flask(__name__, template_folder="../templates", static_folder="../static")
+DATA_PATH = r"online_review.csv"
 df = pd.read_csv(DATA_PATH)
 df = df[['Review', 'Rating']].dropna().head(200)
 
@@ -44,7 +44,7 @@ def true_sentiment(rating):
     return "Positive" if rating >= 4 else "Negative" if rating <= 2 else "Neutral"
 
 def generate_wordcloud():
-    static_folder = os.path.join(app.root_path, r"C:\Users\luthr\Downloads\amazon product review\static")
+    static_folder = os.path.join(app.root_path, r"..\static")
     wordcloud_path = os.path.join(static_folder, 'wordcloud.png')
 
     if os.path.exists(wordcloud_path):
@@ -175,7 +175,7 @@ def analyze():
                            bar_img=bar_img,
                            roc_img=roc_img)
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000)
+    app.run(host="0.0.0.0", port=5000)
 
 
 
