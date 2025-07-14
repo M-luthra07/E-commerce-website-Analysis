@@ -1,7 +1,8 @@
 Flask
-numpy
-pandas
 textblob
+pandas
 matplotlib
-wordcloud
 seaborn
+scikit-learn
+wordcloud
+numpy
