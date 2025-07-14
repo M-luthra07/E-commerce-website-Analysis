@@ -44,7 +44,7 @@ def true_sentiment(rating):
     return "Positive" if rating >= 4 else "Negative" if rating <= 2 else "Neutral"
 
 def generate_wordcloud():
-    static_folder = os.path.join(app.root_path, r"..\static")
+    static_folder = os.path.join(app.root_path, r"../static")
     wordcloud_path = os.path.join(static_folder, 'wordcloud.png')
 
     if os.path.exists(wordcloud_path):
@@ -175,7 +175,7 @@ def analyze():
                            bar_img=bar_img,
                            roc_img=roc_img)
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port= 5000)
 
 
 
