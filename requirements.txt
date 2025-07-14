@@ -4,5 +4,3 @@ pandas
 textblob
 matplotlib
 wordcloud
-scikit-learn
-seaborn
