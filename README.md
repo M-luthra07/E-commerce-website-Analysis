@@ -40,4 +40,6 @@ ROC AUC	0.99	📈
 False Positives	<5%	✅
 🚀 Deployment
 The application is live on Railway:
-(https://m-luthra07-e-commerce-website-analysis-production.up.railway.app/)
+https://e-commerce-website-analysis.onrender.com 
+
+
