@@ -5,7 +5,7 @@ from wordcloud import WordCloud
 import os
 import re
 import matplotlib
-   matplotlib.use("Agg")
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 import seaborn as sns
