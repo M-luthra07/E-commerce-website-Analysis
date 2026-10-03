@@ -4,7 +4,10 @@ import pandas as pd
 from wordcloud import WordCloud
 import os
 import re
+import matplotlib
+   matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, roc_curve, auc
 import io
@@ -174,8 +177,8 @@ def analyze():
                            cm_img=cm_img,
                            bar_img=bar_img,
                            roc_img=roc_img)
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port= 5200)
+if __name__ == "__main__"
+       app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5200)))
 
 
 
