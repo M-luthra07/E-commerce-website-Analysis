@@ -39,7 +39,7 @@ Accuracy	87.0%	🎯
 ROC AUC	0.99	📈
 False Positives	<5%	✅
 🚀 Deployment
-The application is live on Railway:
+The application is live on Render:
 https://e-commerce-website-analysis.onrender.com 
 
 
